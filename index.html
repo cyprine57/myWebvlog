@@ -6,40 +6,47 @@
     <title>I love Cats</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-
-  <body>
-
-      <h1 class="text-center">
+<style>
+  body {
+    font-family: "Montserrat";
+  }
+</style>
+  
+<body></body>
+      <h1 class="text-center text-8xl font-bold mt-10">
         All About Cats
       </h1>
 
-      <p class="text-center">
+      <p class="text-center text-xl mt-5">
         There are many different types of cats, and each cat can have their own
         distinct personality.
       </p>
 
-      <img src="abbu.jpg" alt="abbu" />
+<div class="flex flex-col md:flex-row items-center gap-8">
+  
+    <div class="flex-shrink-0 items-center mt-10">
+      <img src="abbu.jpg" alt="Cat" class="rounded-lg w-120 h-auto shadow-lg">
+    </div>
 
-      <section class="">
-        <h2>Their origin!</h2>
-        <p>
-          Cats have been with humans for thousands of years. They were first
-          domesticated around 4,000 years ago in Egypt, where they were valued
-          for protecting grain stores from rodents.
-        </p>
-        <p>
-          Over time, they became symbols of grace and companionship across many
-          cultures.
-        </p>
-      </section>
+    <div class="text-center md:text-left md:max-w-md mt-10">
+      <h2 class="text-2xl font-bold mb-3">Their origin!</h2>
+      <p class="mb-2">
+        Cats have been with humans for thousands of years. They were first domesticated around 
+        4,000 years ago in Egypt, where they were valued for protecting grain stores from rodents.
+      </p>
+      <p class="mb-6">
+        Over time, they became symbols of grace and companionship across many cultures.
+      </p>
+    </div>
+</div>
 
-      <br />
+      <br/>
 
-      <section class="">
-        <h1>Know more here!</h1>
+      <section class="text-center">
+        <h1 class="font-bold text-3xl mt-5">Know more here!</h1>
 
         <a href="about.html">
           <button class="">The Types of Cats</button>
